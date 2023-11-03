@@ -1,0 +1,88 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LinkBoostAsHeaderLib (Debug) Windows",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "windows": {
+                // Adjust the path to the Debug executable (rebuild before debugging!)
+                "program": "${workspaceFolder}/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+/*
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildMake/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildMake/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNMake/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildVS/x32/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+                "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildVS/x64/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d.exe"
+*/
+            },
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "LinkBoostAsHeaderLib (Debug) Linux/Mac",
+            "type": "cppdbg",
+            "request": "launch",
+            // Adjust the path to the Debug executable (rebuild before debugging!)
+            "linux": {
+                "program": "${workspaceFolder}/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d"
+            },
+            "osx": {
+                "program": "${workspaceFolder}/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d"
+            },
+/*
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildMake/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildMake/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNMake/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinja/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Gnu/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Clang/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildNinjaMC/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildVS/x32/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+            "program": "${workspaceFolder}/Cpp/Demo/LinkBoostAsHeaderLib/buildVS/x64/Msvc/buildOut/LinkBoostAsHeaderLib/bin/Debug/LinkBoostAsHeaderLib_d",
+*/
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
