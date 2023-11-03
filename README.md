@@ -15,6 +15,11 @@ to verify that the linked libraries work. While Boost Rational is a header-only 
 
 ## Commands to build and run the program
 
+```
+git clone --depth 1 https://github.com/MariuszJozef/CMakeLinkBoostHeaderOnly.git
+cd CMakeLinkBoostHeaderOnly
+```
+
 ### Windows, MSVC compiler
 
 Run in *Developer Command Prompt for VS*
